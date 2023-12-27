@@ -1,5 +1,10 @@
 /* Reset de estilos para eliminar márgenes y rellenos predeterminados */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
 	margin: 0;
 	padding: 0;
 }
@@ -9,7 +14,8 @@ body {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	line-height: 1.6;
 	color: #333;
-	text-align: center; /* Centra el texto en el cuerpo */
+	text-align: center;
+	/* Centra el texto en el cuerpo */
 }
 
 /* Encabezado */
@@ -21,10 +27,13 @@ header {
 
 /* Estilo del título */
 .titulo {
-	font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
-	font-size: 2.5em; /* Ajusta el tamaño según tus preferencias */
+	font-family: 'Arial', sans-serif;
+	/* Cambia la fuente del título */
+	font-size: 2.5em;
+	/* Ajusta el tamaño según tus preferencias */
 	font-weight: bold;
-	color: #333; /* Cambia el color del texto según tus preferencias */
+	color: #333;
+	/* Cambia el color del texto según tus preferencias */
 }
 
 /* Navegación */
@@ -37,7 +46,8 @@ nav {
 nav ul {
 	list-style: none;
 	display: flex;
-	justify-content: center; /* Centra los elementos de la lista horizontalmente */
+	justify-content: center;
+	/* Centra los elementos de la lista horizontalmente */
 }
 
 nav li {
@@ -50,27 +60,36 @@ nav a {
 	font-size: 1.2em;
 	display: flex;
 	flex-direction: column;
-	align-items: center; /* Centra los elementos verticalmente */
+	align-items: center;
+	/* Centra los elementos verticalmente */
 }
 
 /* Estilo de iconos */
 nav img {
-	width: 32px; /* Ajusta el tamaño de los iconos */
+	width: 32px;
+	/* Ajusta el tamaño de los iconos */
 	height: 32px;
-	margin-bottom: 5px; /* Espaciado entre el ícono y el texto */
+	margin-bottom: 5px;
+	/* Espaciado entre el ícono y el texto */
 }
 
 /* Efecto al pasar el mouse sobre la lista */
 nav li:hover {
-	transform: scale(1.1); /* Agranda el elemento */
+	transform: scale(1.1);
+	/* Agranda el elemento */
 }
 
 nav a:hover {
-	font-size: 1.3em; /* Aumenta el tamaño del texto */
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
-	font-weight: bold; /* Texto en negrita */
-	letter-spacing: 1px; /* Espaciado entre letras */
-	line-height: 1.4; /* Altura de línea */
+	font-size: 1.3em;
+	/* Aumenta el tamaño del texto */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	/* Agrega sombra al texto */
+	font-weight: bold;
+	/* Texto en negrita */
+	letter-spacing: 1px;
+	/* Espaciado entre letras */
+	line-height: 1.4;
+	/* Altura de línea */
 }
 
 /* Sección principal */
@@ -84,11 +103,14 @@ h2 {
 }
 
 section img {
-	max-width: 70%; /* Ajusta el tamaño según tus preferencias */
+	max-width: 70%;
+	/* Ajusta el tamaño según tus preferencias */
 	height: auto;
 	display: block;
-	margin: 0 auto; /* Centra la imagen horizontalmente */
-	margin-top: 20px; /* Espaciado opcional arriba de la imagen */
+	margin: 0 auto;
+	/* Centra la imagen horizontalmente */
+	margin-top: 20px;
+	/* Espaciado opcional arriba de la imagen */
 }
 
 /* Pie de página */
@@ -115,18 +137,43 @@ section {
 }
 
 h2 {
-	margin-bottom: 20px; /* Añade un espacio entre el título y las imágenes */
+	margin-bottom: 20px;
+	/* Añade un espacio entre el título y las imágenes */
 }
 
 /* Galería de proyectos */
 .galeria-proyectos {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center; /* Centra las imágenes horizontalmente */
+	justify-content: center;
+	/* Centra las imágenes horizontalmente */
 }
 
 .galeria-proyectos img {
-	max-width: 45%; /* Ajusta el tamaño según tus preferencias */
+	max-width: 45%;
+	/* Ajusta el tamaño según tus preferencias */
 	height: auto;
-	margin: 10px; /* Ajusta el espacio entre las imágenes */
+	margin: 10px;
+	/* Ajusta el espacio entre las imágenes */
+}
+
+/* Quiénes Somos */
+.quienes-somos {
+	padding: 20px;
+	text-align: center;
+}
+
+.quienes-somos h2 {
+	margin-bottom: 20px; /* Añade un espacio entre el título y el párrafo */
+}
+
+/* Imagen con marco y enmarcada en una circunferencia */
+.imagen-quienes-somos {
+	margin-top: 20px; /* Añade un espacio sobre la imagen */
+}
+
+.imagen-quienes-somos img {
+	max-width: 300px; /* Ajusta el tamaño de la imagen según tus preferencias */
+	border: 5px solid #333; /* Añade un marco alrededor de la imagen */
+	border-radius: 50%; /* Hace que la imagen esté enmarcada en una circunferencia */
 }
