@@ -129,32 +129,47 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* IMAGENES DE PROYECTOS */
-/* Sección principal */
-section {
+/* Página de Proyectos */
+.proyectos {
 	padding: 20px;
 	text-align: center;
 }
 
-h2 {
+.proyectos h2 {
 	margin-bottom: 20px;
-	/* Añade un espacio entre el título y las imágenes */
+	/* Añade un espacio entre el título y los proyectos */
 }
 
-/* Galería de proyectos */
-.galeria-proyectos {
+/* Proyecto Individual */
+.proyecto {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	/* Centra las imágenes horizontalmente */
+	align-items: center;
+	margin-bottom: 30px;
+	/* Espacio entre proyectos */
 }
 
-.galeria-proyectos img {
-	max-width: 45%;
-	/* Ajusta el tamaño según tus preferencias */
-	height: auto;
-	margin: 10px;
-	/* Ajusta el espacio entre las imágenes */
+.proyecto img {
+	max-width: 300px;
+	/* Tamaño máximo de la imagen */
+	width: 100%;
+	margin-right: 20px;
+	/* Espacio entre la imagen y la descripción */
+}
+
+.descripcion {
+	flex: 1;
+	/* Toma el espacio restante */
+}
+
+.descripcion h3 {
+	font-size: 1.5em;
+	/* Tamaño del título del proyecto */
+	margin-bottom: 10px;
+}
+
+/* Estilo para el texto de la descripción */
+.descripcion p {
+	color: #555;
 }
 
 /* Quiénes Somos */
@@ -164,27 +179,33 @@ h2 {
 }
 
 .quienes-somos h2 {
-	margin-bottom: 20px; /* Añade un espacio entre el título y el párrafo */
+	margin-bottom: 20px;
+	/* Añade un espacio entre el título y el párrafo */
 }
 
 /* Imagen con marco y enmarcada en una circunferencia */
 .imagen-quienes-somos {
-	margin-top: 20px; /* Añade un espacio sobre la imagen */
+	margin-top: 20px;
+	/* Añade un espacio sobre la imagen */
 }
 
 .imagen-quienes-somos img {
-	max-width: 300px; /* Ajusta el tamaño de la imagen según tus preferencias */
-	border: 5px solid #333; /* Añade un marco alrededor de la imagen */
-	border-radius: 50%; /* Hace que la imagen esté enmarcada en una circunferencia */
+	max-width: 300px;
+	/* Ajusta el tamaño de la imagen según tus preferencias */
+	border: 5px solid #333;
+	/* Añade un marco alrededor de la imagen */
+	border-radius: 50%;
+	/* Hace que la imagen esté enmarcada en una circunferencia */
 }
 
 /* ... (otros estilos) ... */
 
 /* Estilos para pantallas más pequeñas (dispositivos móviles) */
 @media screen and (max-width: 600px) {
+
 	/* Ajusta los estilos según sea necesario para pantallas más pequeñas */
 	body {
-			font-size: 14px;
+		font-size: 14px;
 	}
 
 	/* ... (otros ajustes) ... */
